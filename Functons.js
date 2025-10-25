@@ -33,7 +33,6 @@ const evenNumbers = numbers.filter(num => num % 2 === 0);
 
 console.log(evenNumbers)
 
-
 /* It is good for the use of short calls backs and also doesn't require this to function or work*/
 
 function createGreeting(name = "Valued Customer", greeting = "Hello") {
@@ -53,6 +52,7 @@ console.log(createGreeting("Bob", "Welcome"));
 function sumAll(...numbers) {
   return numbers.reduce((sum, num) => sum + num, 0);
 }
+
 
 console.log(sumAll(1, 2, 3, 4));
 console.log(sumAll(10, 20));    
